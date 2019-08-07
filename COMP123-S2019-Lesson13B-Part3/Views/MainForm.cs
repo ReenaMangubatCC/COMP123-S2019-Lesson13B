@@ -44,5 +44,24 @@ namespace COMP123_S2019_Lesson13B_Part3.Views
             }
            
         }
+
+        private void SourceTextBox_MouseDown(object sender, MouseEventArgs e)
+        {
+            SourceTextBox.DoDragDrop(SourceTextBox.Text, DragDropEffects.Move);
+
+            SourceTextBox.Clear();
+
+        }
+
+        private void TargetTextBox_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Move;
+        }
+
+        private void TargetTextBox_DragDrop(object sender, DragEventArgs e)
+        {
+            TargetTextBox.Text = e.Data.GetData(DataFormats.Text).ToString();
+
+        }
     }
 }

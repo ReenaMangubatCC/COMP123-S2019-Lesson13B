@@ -33,14 +33,7 @@
             this.StartTabPage = new System.Windows.Forms.TabPage();
             this.MainTabPage = new System.Windows.Forms.TabPage();
             this.EndTabPage = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.SourceLabel = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -84,9 +77,11 @@
             this.helpToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.NextButton = new System.Windows.Forms.Button();
             this.BackButton = new System.Windows.Forms.Button();
+            this.SourceTextBox = new System.Windows.Forms.TextBox();
+            this.TargetLabel = new System.Windows.Forms.Label();
+            this.TargetTextBox = new System.Windows.Forms.TextBox();
             this.MainTabControl.SuspendLayout();
             this.MainTabPage.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -114,7 +109,10 @@
             // 
             // MainTabPage
             // 
-            this.MainTabPage.Controls.Add(this.label1);
+            this.MainTabPage.Controls.Add(this.TargetTextBox);
+            this.MainTabPage.Controls.Add(this.TargetLabel);
+            this.MainTabPage.Controls.Add(this.SourceTextBox);
+            this.MainTabPage.Controls.Add(this.SourceLabel);
             this.MainTabPage.Location = new System.Drawing.Point(4, 47);
             this.MainTabPage.Name = "MainTabPage";
             this.MainTabPage.Padding = new System.Windows.Forms.Padding(3);
@@ -133,88 +131,14 @@
             this.EndTabPage.Text = "End";
             this.EndTabPage.UseVisualStyleBackColor = true;
             // 
-            // tableLayoutPanel1
+            // SourceLabel
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.button6, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.button5, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.button4, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button3, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 276);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(754, 160);
-            this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(371, 47);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(380, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(371, 47);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(3, 56);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(371, 47);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(380, 56);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(371, 47);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(3, 109);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(371, 47);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(380, 109);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(371, 47);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(323, 107);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 39);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.SourceLabel.AutoSize = true;
+            this.SourceLabel.Location = new System.Drawing.Point(41, 92);
+            this.SourceLabel.Name = "SourceLabel";
+            this.SourceLabel.Size = new System.Drawing.Size(125, 39);
+            this.SourceLabel.TabIndex = 0;
+            this.SourceLabel.Text = "Source";
             // 
             // menuStrip1
             // 
@@ -575,6 +499,33 @@
             this.BackButton.UseVisualStyleBackColor = true;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
+            // SourceTextBox
+            // 
+            this.SourceTextBox.Location = new System.Drawing.Point(48, 144);
+            this.SourceTextBox.Name = "SourceTextBox";
+            this.SourceTextBox.Size = new System.Drawing.Size(225, 45);
+            this.SourceTextBox.TabIndex = 1;
+            this.SourceTextBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SourceTextBox_MouseDown);
+            // 
+            // TargetLabel
+            // 
+            this.TargetLabel.AutoSize = true;
+            this.TargetLabel.Location = new System.Drawing.Point(503, 92);
+            this.TargetLabel.Name = "TargetLabel";
+            this.TargetLabel.Size = new System.Drawing.Size(115, 39);
+            this.TargetLabel.TabIndex = 0;
+            this.TargetLabel.Text = "Target";
+            // 
+            // TargetTextBox
+            // 
+            this.TargetTextBox.AllowDrop = true;
+            this.TargetTextBox.Location = new System.Drawing.Point(510, 144);
+            this.TargetTextBox.Name = "TargetTextBox";
+            this.TargetTextBox.Size = new System.Drawing.Size(225, 45);
+            this.TargetTextBox.TabIndex = 1;
+            this.TargetTextBox.DragDrop += new System.Windows.Forms.DragEventHandler(this.TargetTextBox_DragDrop);
+            this.TargetTextBox.DragEnter += new System.Windows.Forms.DragEventHandler(this.TargetTextBox_DragEnter);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 38F);
@@ -583,7 +534,6 @@
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.MainTabControl);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -597,7 +547,6 @@
             this.MainTabControl.ResumeLayout(false);
             this.MainTabPage.ResumeLayout(false);
             this.MainTabPage.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
@@ -612,15 +561,8 @@
         private System.Windows.Forms.TabControl MainTabControl;
         private System.Windows.Forms.TabPage StartTabPage;
         private System.Windows.Forms.TabPage MainTabPage;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label SourceLabel;
         private System.Windows.Forms.TabPage EndTabPage;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
@@ -664,5 +606,8 @@
         private System.Windows.Forms.ToolStripButton helpToolStripButton;
         private System.Windows.Forms.Button NextButton;
         private System.Windows.Forms.Button BackButton;
+        private System.Windows.Forms.TextBox SourceTextBox;
+        private System.Windows.Forms.TextBox TargetTextBox;
+        private System.Windows.Forms.Label TargetLabel;
     }
 }
