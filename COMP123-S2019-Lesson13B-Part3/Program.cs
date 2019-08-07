@@ -1,15 +1,15 @@
-﻿using COMP123_S2019_Lesson13B_Part1.Views;
+﻿using COMP123_S2019_Lesson13B_Part3.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace COMP123_S2019_Lesson13B_Part1
+namespace COMP123_S2019_Lesson13B_Part3
 {
-    public static class Program
+    static class Program
     {
-        public static StartForm startForm;
+        public static MainForm mainForm;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -19,11 +19,9 @@ namespace COMP123_S2019_Lesson13B_Part1
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            startForm = new StartForm();
+            mainForm = new MainForm();
 
-            Application.Run(startForm);
-
-            
+            Application.Run(mainForm);
         }
     }
 }

@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COMP123-S2019-Lesson13B-Part1", "COMP123-S2019-Lesson13B-Part1\COMP123-S2019-Lesson13B-Part1.csproj", "{309CE1A0-237D-4922-9417-2079B2999BEE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COMP123-S2019-Lesson13B-Part2", "COMP123-S2019-Lesson13B-Part2\COMP123-S2019-Lesson13B-Part2.csproj", "{F8843723-27BC-4FE0-B473-6C69E0A884E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COMP123-S2019-Lesson13B-Part3", "COMP123-S2019-Lesson13B-Part3\COMP123-S2019-Lesson13B-Part3.csproj", "{C6469F2D-E625-4F99-A1A5-B77C3778428B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{309CE1A0-237D-4922-9417-2079B2999BEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{309CE1A0-237D-4922-9417-2079B2999BEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{309CE1A0-237D-4922-9417-2079B2999BEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8843723-27BC-4FE0-B473-6C69E0A884E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8843723-27BC-4FE0-B473-6C69E0A884E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8843723-27BC-4FE0-B473-6C69E0A884E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8843723-27BC-4FE0-B473-6C69E0A884E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6469F2D-E625-4F99-A1A5-B77C3778428B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6469F2D-E625-4F99-A1A5-B77C3778428B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6469F2D-E625-4F99-A1A5-B77C3778428B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6469F2D-E625-4F99-A1A5-B77C3778428B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,16 +3,15 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using COMP123_S2019_Lesson13B_Part1.Views;
 
-namespace COMP123_S2019_Lesson13B_Part1
+namespace COMP123_S2019_Lesson13B_Part1.Views
 {
-    public partial class Form1 : Form
+    public partial class StartForm : MasterForm
     {
-        public Form1()
+        public StartForm()
         {
             InitializeComponent();
         }
